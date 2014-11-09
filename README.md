@@ -4,9 +4,17 @@
 ## Filepath
 
 ```
+./~
+├── .dots
+├── .emacs.d
+├── .vimrc -> /Users/yamahare/.dots/dotfiles/.vimrc
+└─── .zshenv -> /Users/yamahare/.dots/dotfiles/.zshenv
+
+
 ./.emacs.d
 ├── auto-save-list
 └── init.el -> /Users/yamahare/.dots/dotfiles/init.el
+
 
 ./.dots
 ├── .zshrc
@@ -25,9 +33,4 @@
     ├── .zsh_history
     └── .zshrc -> /Users/yamahare/.dots/dotfiles/.zshrc
 
-./~
-├── .dots
-├── .emacs.d
-├── .vimrc -> /Users/yamahare/.dots/dotfiles/.vimrc
-├── .zshenv -> /Users/yamahare/.dots/dotfiles/.zshenv
 ```
