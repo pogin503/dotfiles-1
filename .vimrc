@@ -18,20 +18,26 @@ NeoBundleCheck
 " =========================
 " basic
 " =========================
+set formatoptions+=mM "整形オプションにマルチバイト追加
+set backspace=indent,eol,start "BSで何でも消せるようにする
 set viminfo=
 set vb t_vb=   " ビープをならさない
 set clipboard+=unnamed " OSのクリップボードを使用する
 set clipboard=unnamed "ヤンクした文字は、システムのクリップボードに入れる"
+set scrolloff=5 "カーソルの上、下に表示する最小限の行数
+set textwidth=0 " 入力されているテキストの最大幅 「0」で無効
+set hidden " 保存しないで他のファイルを表示することが出来るようにする
+set formatoptions=lmoq " 自動整形の実行方法
+set nobackup "バックアップは作成しない
+set noswapfile "スワップファイルを作成しない
+set autoread " Vimの外部で変更されたことが判明したとき、自動的に読み直す
 
 "-----------
-" display
+" View
 "-----------
 set title "編集中のファイル名を表示
-set autoindent "新しい行のインデントを現在行と同じにする
+set ruler  "ルーラー表示
 set number "行番号表示
-set smartindent "オートインデント
-set smarttab "新しい行を作った時に高度な自動インデントを行う
-set tabstop=4 "タブ幅の設定
 set showmatch "閉括弧が入力された時、対応する括弧を強調する
 "カーソル行をハイライト
 set cursorline
@@ -42,9 +48,40 @@ augroup cch
   autocmd WinEnter,BufRead * set cursorline
 augroup END
 
+hi clear CursorLine
+hi CursorLine gui = underline
+highlight CursorLine ctermbg = black guibg = black
+
+" コマンド実行中は再描画しない
+set lazyredraw
+" 高速ターミナル接続を行う
+set ttyfast
+
+"-----------
+" tabIndent
+"-----------
+set tabstop=4
+set softtabstop=4
+set noexpandtab
+set expandtab
+set smarttab
+set shiftwidth=4
+set shiftround
+set nowrap
+set autoindent
+set smartindent
+
 "-----------
 " color
 "-----------
+"let g:solarized_termcolors=256
+let g:solarized_degrade=0
+let g:solarized_bold=1
+let g:solarized_underline=1
+let g:solarized_italic=1
+let g:solarized_termtrans=0
+let g:solarized_contrast="high"
+let g:solarized_visibility="high"
 colorscheme solarized
 syntax enable "カラー表示
 syntax on "コードの色分け
@@ -60,10 +97,25 @@ set hlsearch   " 検索文字をハイライト
 " 検索結果のハイライトをEsc連打でクリアする
 nnoremap <ESC><ESC> :nohlsearch<CR>
 
+"------------------
+"   Move
+"------------------
+" insert mode での移動
+inoremap  <C-e> <END>
+inoremap  <C-a> <HOME>
+" インサートモードでもhjklで移動（Ctrl押すけどね）
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+
 "=============================
 " powerline
 "=============================
+set encoding=utf-8 " Necessary to show unicode glyphs
 set laststatus=2 " statusline表示
+set guifont=Ricty_for_Powerline:h16
+set guifontwide=Ricty:h16
 set ruler "カーソルが何行目の何列目に置かれているかを表示する
 let g:Powerline_symbols = 'fancy'
 set t_Co=256
