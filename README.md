@@ -12,16 +12,16 @@
 
 
 ./.dots
-├── .zshrc
 ├── dotfiles
 │   ├── .git
 │   ├── .vimrc
 │   ├── .zshenv
 │   ├── .zshrc
+│   ├── .zshrc_before
+│   ├── README.md
 │   ├── dotfilesLink.sh
 │   └── init.el
 ├── vim
-│   ├── .viminfo
 │   └── bundle
 └── zsh
     ├── .zcompdump
