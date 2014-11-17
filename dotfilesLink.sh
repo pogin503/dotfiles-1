@@ -1,5 +1,6 @@
 #!/bin/sh
-ln -sf ~/.dots/dotfiles/.vimrc ~/.vimrc
-ln -sf ~/.dots/dotfiles/.zshrc ~/.dots/zsh/.zshrc
-ln -sf ~/.dots/dotfiles/.zshenv ~/.zshenv
-ln -sf ~/.dots/dotfiles/init.el ~/.emacs.d/init.el
+ln -sf ~/Dropbox/Home/dotfiles/.vimrc ~/.vimrc
+ln -sf ~/Dropbox/Home/dotfiles/.zshrc ~/Dropbox/Home/zsh/.zshrc
+ln -sf ~/Dropbox/Home/dotfiles/.zshenv ~/.zshenv
+ln -sf ~/Dropbox/Home/.ssh ~/.ssh
+ln -sf ~/Dropbox/Home/.gitconfig ~/.gitconfig
