@@ -29,7 +29,7 @@ chpwd_functions=($chpwd_functions dirs)
 #------------------------------------
 # History
 #------------------------------------
-HISTFILE=~/.dots/zsh/.zsh_history   # ヒストリを保存するファイル
+HISTFILE=~/Dropbox/Home/zsh/.zsh_history   # ヒストリを保存するファイル
 HISTSIZE=100000 				    # メモリに保存されるヒストリの件数
 SAVEHIST=$HISTSIZE				    # 保存されるヒストリの件数
 
