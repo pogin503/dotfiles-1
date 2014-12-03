@@ -2,8 +2,9 @@
 .ssh/
 .gitconfig
 .emacs.d/*
-vim/
+vim/bundle/
 zsh/*
 #==========
 !.zshrc
+!.zshenv
 !init.el
