@@ -4,33 +4,33 @@
 ## Filepath
 
 ```
-./~
-├── .dots
+Dropbox/Home/
 ├── .emacs.d
-├── .vimrc -> /Users/yamahare/.dots/dotfiles/.vimrc
-└── .zshenv -> /Users/yamahare/.dots/dotfiles/.zshenv
-
-
-./.dots
-├── dotfiles
-│   ├── .git
-│   ├── .vimrc
-│   ├── .zshenv
-│   ├── .zshrc
-│   ├── .zshrc_before
-│   ├── README.md
-│   ├── dotfilesLink.sh
+│   ├── auto-save-list
 │   └── init.el
+├── .git
+├── .gitconfig
+├── .gitignore
+├── .ssh
+│   ├── .ssh -> /Users/yamahare/Dropbox/Home/.ssh/　←fuck!!!
+│   ├── config
+│   ├── github
+│   └── known_hosts
+├── README.md
+├── dotfilesLink.sh
 ├── vim
+│   ├── .vimrc
 │   └── bundle
 └── zsh
     ├── .zcompdump
     ├── .zsh_history
-    └── .zshrc -> /Users/yamahare/.dots/dotfiles/.zshrc
+    ├── .zshenv
+    └── .zshrc
 
-
-./.emacs.d
-├── auto-save-list
-└── init.el -> /Users/yamahare/.dots/dotfiles/init.el
+~/
+├── .gitconfig -> /Users/yamahare/Dropbox/Home/.gitconfig
+├── .ssh -> /Users/yamahare/Dropbox/Home/.ssh
+├── .vimrc -> /Users/yamahare/Dropbox/Home/vim/.vimrc
+├── .zshenv -> /Users/yamahare/Dropbox/Home/zsh/.zshenv
 
 ```
