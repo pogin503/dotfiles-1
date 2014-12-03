@@ -1,9 +1,9 @@
 #------------------------------------
 # path
 #------------------------------------
-# PATH=$PATH:/usr/local/bin
-# PATH=$PATH:/usr/bin
-# PATH=$PATH:/bin
+PATH=/usr/local/bin
+PATH=$PATH:/usr/bin
+PATH=$PATH:/bin
 PATH=$PATH:/usr/sbin
 PATH=$PATH:/sbin
 #PATH=$HOME/.rbenv/bin:$PATH
@@ -326,7 +326,7 @@ alias rr="command rm -rf"
 ## ファイル操作を確認する。
 alias rm="rm -i"
 alias cp="cp -i"
-alias mv="mv -i"
+#alias mv="mv -i"
 
 ## pushd/popdのショートカット。
 alias pd="pushd"
