@@ -1,6 +1,9 @@
+#ignore_list
 .ssh/
 .gitconfig
-.emacs.d/
+.emacs.d/*
 vim/
-zsh/
+zsh/*
+#==========
 !.zshrc
+!init.el
