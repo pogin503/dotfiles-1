@@ -1,8 +1,9 @@
-#This is my dotfiles.
+This is my dotfiles.
 
 ## Filepath
 
-> Dropbox/Home/
+```
+Dropbox/Home/
 ├── .emacs.d
 │   ├── auto-save-list
 │   └── init.el
@@ -24,8 +25,10 @@
     ├── .zshenv
     └── .zshrc
 
-> ~/
+~/
 ├── .gitconfig -> /Users/yamahare/Dropbox/Home/.gitconfig
 ├── .ssh -> /Users/yamahare/Dropbox/Home/ssh
 ├── .vimrc -> /Users/yamahare/Dropbox/Home/vim/.vimrc
 ├── .zshenv -> /Users/yamahare/Dropbox/Home/zsh/.zshenv
+
+```
