@@ -1,5 +1,5 @@
 #ignore_list
-.ssh/
+ssh/
 .gitconfig
 .emacs.d/*
 vim/bundle/
