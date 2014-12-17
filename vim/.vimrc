@@ -22,7 +22,6 @@ set formatoptions+=mM "整形オプションにマルチバイト追加
 set backspace=indent,eol,start "BSで何でも消せるようにする
 set viminfo=
 set vb t_vb=   " ビープをならさない
-set clipboard+=unnamed " OSのクリップボードを使用する
 set clipboard=unnamed "ヤンクした文字は、システムのクリップボードに入れる"
 set scrolloff=5 "カーソルの上、下に表示する最小限の行数
 set textwidth=0 " 入力されているテキストの最大幅 「0」で無効

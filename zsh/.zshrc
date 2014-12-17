@@ -332,6 +332,9 @@ alias cp="cp -i"
 alias pd="pushd"
 alias po="popd"
 
+## vi=vim (MacOS標準のviを使わないようにする）
+alias vi="vim"
+
 ## lsとpsの設定
 ### ls: できるだけGNU lsを使う。
 ### ps: 自分関連のプロセスのみ表示。
