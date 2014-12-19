@@ -9,7 +9,7 @@ PATH=$PATH:/sbin
 #PATH=$HOME/.rbenv/bin:$PATH
 #PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH
-#eval "$(rbenv init -)"
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # キーバインド
 ## Emacsキーバインドを使う。

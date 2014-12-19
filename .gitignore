@@ -1,4 +1,6 @@
 #ignore_list
+.gem/
+.rbenv/
 ssh/
 .gitconfig
 .emacs.d/*
