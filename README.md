@@ -7,9 +7,11 @@ Dropbox/Home/
 ├── .emacs.d
 │   ├── auto-save-list
 │   └── init.el
+├── .gem
 ├── .git
 ├── .gitconfig
 ├── .gitignore
+├── .rbenv
 ├── ssh
 │   ├── config
 │   ├── github
@@ -26,9 +28,10 @@ Dropbox/Home/
     └── .zshrc
 
 ~/
+├── .gem -> /Users/yamahare/Dropbox/Home/.gem
 ├── .gitconfig -> /Users/yamahare/Dropbox/Home/.gitconfig
+├── .rbenv -> /Users/yamahare/Dropbox/Home/.rbenv
 ├── .ssh -> /Users/yamahare/Dropbox/Home/ssh
 ├── .vimrc -> /Users/yamahare/Dropbox/Home/vim/.vimrc
 ├── .zshenv -> /Users/yamahare/Dropbox/Home/zsh/.zshenv
-
 ```
