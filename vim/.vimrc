@@ -14,7 +14,8 @@ NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'slim-template/vim-slim.git'
 NeoBundle 'Townk/vim-autoclose'
 NeoBundle 'tpope/vim-endwise'
-NeoBundle 'tomtom/tcomment_vim'
+NeoBundle 'tpope/vim-rails/'
+NeoBundle 'tomtom/tcomment_vim'     " gcc で現在行をコメントアウト。 選択してgcで複数行。
 NeoBundle 'Yggdroot/indentLine'
 call neobundle#end()
 
@@ -114,6 +115,17 @@ inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 
+"------------------
+" KeyMap
+"------------------
+":と;でコマンドラインモード
+nnoremap ; :
+"分割ウインドウの移動
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
+nnoremap <C-h> <C-w>h
+
 "=============================
 " powerline
 "=============================
@@ -201,3 +213,11 @@ nnoremap <silent> [unite]h :<C-u>Unite<Space>history/yank<CR>
 " ESCキーを2回押すと終了する
 au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
 au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
+
+"=============================
+" smooth_scroll.vim
+"=============================
+" 隠しファイルをデフォルトで表示させる
+let NERDTreeShowHidden = 1
+" デフォルトでツリーを表示させる
+autocmd VimEnter * execute 'NERDTree'
