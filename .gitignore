@@ -1,4 +1,5 @@
 #ignore_list
+.DS_Store
 .gem/
 .rbenv/
 ssh/
