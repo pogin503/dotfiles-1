@@ -7,6 +7,7 @@ ssh/
 .emacs.d/*
 vim/bundle/
 zsh/*
+.vagrant.d/
 #==========
 !.zshrc
 !.zshenv
