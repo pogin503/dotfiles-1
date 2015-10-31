@@ -6,6 +6,7 @@ PATH=$PATH:/usr/bin
 PATH=$PATH:/bin
 PATH=$PATH:/usr/sbin
 PATH=$PATH:/sbin
+PATH="/usr/local/sbin:$PATH"
 #PATH=$HOME/.rbenv/bin:$PATH
 #PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH

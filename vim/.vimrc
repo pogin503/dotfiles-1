@@ -12,11 +12,13 @@ NeoBundle 'ujihisa/unite-colorscheme'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'Lokaltog/vim-powerline'
 NeoBundle 'slim-template/vim-slim.git'
-NeoBundle 'Townk/vim-autoclose'
-NeoBundle 'tpope/vim-endwise'
+NeoBundle 'Townk/vim-autoclose'    " うまく囲めないため削除
+NeoBundle 'tpope/vim-endwise'      " 上に同じ
 NeoBundle 'tpope/vim-rails/'
 NeoBundle 'tomtom/tcomment_vim'     " gcc で現在行をコメントアウト。 選択してgcで複数行。
-NeoBundle 'Yggdroot/indentLine'
+NeoBundle 'Yggdroot/indentLine'   " これが原因でJSONのダブルクオーテーションが表示されない
+NeoBundle 'elzr/vim-json'         " 上のJSONの問題解決用シンタックス上書き
+
 call neobundle#end()
 
 filetype plugin indent on     " required!
@@ -221,3 +223,7 @@ au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
 let NERDTreeShowHidden = 1
 " デフォルトでツリーを表示させる
 autocmd VimEnter * execute 'NERDTree'
+"=============================
+" vim-json
+"=============================
+let g:vim_json_syntax_conceal = 0

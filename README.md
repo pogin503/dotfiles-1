@@ -4,6 +4,7 @@ This is my dotfiles.
 
 ```
 Dropbox/Home/
+├── .composer
 ├── .emacs.d
 │   ├── auto-save-list
 │   └── init.el
@@ -34,4 +35,5 @@ Dropbox/Home/
 ├── .ssh -> /Users/yamahare/Dropbox/Home/ssh
 ├── .vimrc -> /Users/yamahare/Dropbox/Home/vim/.vimrc
 ├── .zshenv -> /Users/yamahare/Dropbox/Home/zsh/.zshenv
+├── .composer -> /Users/yamahare/Dropbox/Home/composer/.composer
 ```
