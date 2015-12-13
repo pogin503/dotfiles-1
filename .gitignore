@@ -9,6 +9,7 @@ ssh/
 vim/bundle/
 zsh/*
 .vagrant.d/
+.WebIde80/
 #==========
 !.zshrc
 !.zshenv

@@ -5,6 +5,7 @@ This is my dotfiles.
 ```
 Dropbox/Home/
 ├── .composer
+├── .WebIde80 //this is phpstorm config
 ├── .emacs.d
 │   ├── auto-save-list
 │   └── init.el

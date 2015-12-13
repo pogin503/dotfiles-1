@@ -7,3 +7,4 @@ ln -sf ~/Dropbox/Home/.gem ~/.gem
 ln -sf ~/Dropbox/Home/.rbenv ~/.rbenv
 ln -sf ~/Dropbox/Home/.vagrant.d/ ~/.vagrant.d
 ln -sf ~/Dropbox/Home/.composer/ ~/.composer
+ln -sf ~/Dropbox/Home/.WebIde80/ ~/.WebIde80
